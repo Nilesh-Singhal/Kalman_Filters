@@ -178,7 +178,7 @@ plt.plot((1,2,3,4), predicted_state_matrix[0:4,0:1,0:1].T.reshape(4,1), label= '
 plt.plot((0,1,2,3,4), observations[0:1,:].T, label='SENSOR MEASUREMENT')
 plt.xlim(1, 4);
 plt.legend(loc='best');
-plt.title('Graphing Position');
+plt.title('Tracking Position');
 plt.show()
 
 plt.figure(figsize=(fw,5))    
@@ -187,6 +187,6 @@ plt.plot((1,2,3,4), predicted_state_matrix[0:4,1:2,0:1].T.reshape(4,1), label= '
 plt.plot((0,1,2,3,4), observations[1:2,:].T, label='SENSOR MEASUREMENT')
 plt.xlim(1, 4);
 plt.legend(loc='best');
-plt.title('Graphing Velocity');
+plt.title('Tracking Velocity');
 plt.show()
 
